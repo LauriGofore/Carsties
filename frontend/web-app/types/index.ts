@@ -22,3 +22,15 @@ export type Auction = {
   mileage: number;
   imageUrl: string;
 };
+
+export type AuctionFormData = Pick<
+  Auction,
+  | "make"
+  | "model"
+  | "color"
+  | "year"
+  | "mileage"
+  | "imageUrl"
+  | "reservePrice"
+  | "auctionEnd"
+>;
