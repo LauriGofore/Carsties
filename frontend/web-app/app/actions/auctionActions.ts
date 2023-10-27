@@ -1,7 +1,7 @@
 "use server";
 
 import { Auction, AuctionFormData, Bid, PagedResult } from "@/types";
-import { fetchWrapper } from "@/lib/fetchWrapper";
+import { fetchWrapper } from "@/app/lib/fetchWrapper";
 import { revalidatePath } from "next/cache";
 
 export async function getData(query: string): Promise<PagedResult<Auction>> {
